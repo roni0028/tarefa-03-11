@@ -19,6 +19,7 @@ maisCara = {} #nome, valor
 mediaGasto = 0.0
 
 def adicionarDespesa(nome, valor):
+    global totalGasto, maisCara, mediaGasto
     ListaDespesas.append({"nome": nome, "valor": valor})
     totalGasto += valor
     if not maisCara or valor > maisCara["valor"]:
